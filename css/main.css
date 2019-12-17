@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url(../img/wallhaven-96xr8k.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tela-login{
+    widows: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.login{
+    width: 35%;
+    height: 55vh;
+    background-color: rgb(0,0,0,0.6);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: 45px;
+}
+.titulo-login{
+    width: 80%;
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+}
+.input-login{
+    width: 85%;
+    height: 46px;
+    border: 2px solid #cc6633;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+.input-login input{
+    width: 75%;
+    height: 42px;
+    padding: 0 12px;
+    outline: 0;
+    transition: .2s;    
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    background: none;
+    color: #ffffff;
+}
+.input-login input::placeholder{
+    color: #e7d8b1;
+}
+.bt-login{
+    width: 60%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #cc6633;
+    color: #ffffff;
+    font-size: 1.2em;
+    border: solid 2px #a5491b;
+}
+.bt-login:active{
+    transform: scale(0.98);
+    color: #ffff;
+}
+.bt-login:focus{
+    outline: #a5491b;
+}
+.img-login{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/envelope.svg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-senha{
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/key.svg);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.linha-login{
+    width: 1px;
+    height: 35px;
+    background-color: #e7d8b1;
+}
+.esqueceu{
+    width: 85%;
+    text-align: right;
+    text-decoration: underline;
+    color: #e7d8b1;
+    cursor: pointer;
+    margin-top: -45px;
+}
+.esqueceu:hover{
+    color: #cc6633;
+}
+.rodape{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: center;
+    color: #e7d8b1;
+    font-weight: normal;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+.texto-rodape{
+    opacity: 0.4;
+}
+
+/*Responsivo*/
+
+@media all and (min-width: 1px) and (max-width: 768px){
+    .main{
+        background-size: 400%;
+        background-position-y: 35%;
+    }
+    .tela-login{
+        width: 100%;
+    }
+    .login{
+        width: 90%;
+    }
+}
+
+.paleta{
+    background-color:#e7d8b1;
+    background-color:#000000;
+    background-color:#ffcc33;
+    background-color:#cc6633;
+    background-color:#ea4c88;
+}
+
